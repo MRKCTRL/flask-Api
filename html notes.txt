@@ -1,0 +1,178 @@
+span
+  annotate small peices of text
+  add specific behavior to this element
+  e.g
+<p> tick available is extremely limited</p>
+<span>extemely</span>
+use the
+  <em>extremely</em>
+
+a
+  'anchors' used for links
+  one of the most important links
+  <a href="google.com">Go to google</a>
+
+ol, ul and li
+  'ordered' and 'unordered' lists
+  li is used inside both
+  e.g of ordered list
+    <ol>
+    <li>step </li>
+    <li>step 2</li>
+    <li>step 3</li>
+    <li>step 4</li>
+
+    </ol>
+
+e.g of unordered list
+  <ul>
+  <li>step 3</li>
+  <li>step 2</li>
+  <li>step 1</li>
+  </ul>
+
+form
+  vital and used everwhere
+  there are lots of elements used in forms
+
+  form attributes
+
+  <form action="/login" method="post">
+
+  ... form content goes here
+
+  </form>
+
+
+img
+  one of several used for displaying images
+  the src attribute
+
+  <img src="https://placekitten.com/200/300" />
+
+  the alt attribute
+  <img
+  src="https://placekitten.com/200/300"
+  alt='a cute fluffy kitten'
+   />
+
+flow content
+  typically, text or embedded content(like images or videos)
+  most html elements are part of this category
+
+    things like forms are not
+    flow content has multiple subcategories
+
+sectioning content
+     sectioning - elements for group other elments into collections
+
+  special container elements used for grouping other elements into meaningful collections
+     for example, <article>,<article<,<section> or <nav>
+  notably, <head>,<main> and <footer> are not considered sectioning content. instead they are flow content
+
+
+heading
+  elements for defining titles of a section
+  reserved for the six heading elements, from <h1> to <h6>
+  heading elements can only conatin pharasing content
+
+
+pharasing content
+  plain text elements(or elements that become plain text)
+  fot the most part, this is text and marlup of that text(such as emphasis elements)
+  if it can be inside a sentence, its likely a phrasing content
+  it can also contain images, audio, video, and other. those elements become plain text if the revevant resource cant be retrieved
+
+the mozilla developer network
+  mozilla(web tech)
+
+section
+  contains thematically related elements
+  the section element is part of a whole
+
+  example: merch and blog
+  <body>
+  <section>
+  merch
+  </section>
+  <section>
+  blog post
+  </section>
+
+  </body>
+  generally sections contains a heading
+
+article
+  self-contained composition
+
+  example weather forecast
+
+  <article class="forecast">
+    <h1>Weather forecast for jhb</h1>
+    <article class="day forecast">
+      <h2>02 dec 2023</h2>
+      <p>rain</p>
+    </article>
+    <article class="day-forecast">
+      <h2>04 dec 2023</h2>
+      <p>periods of sunshine</p>
+    </article>
+    <article class="day-forecast">
+      <h2>05 dec 2023</h2>
+      <p>heavy rain</p>
+    </article>
+  </article>
+
+div
+  very generic, so useful for grouping
+  mainly used to aid in styling a page
+
+  take a moment to think if you can use something else instead
+
+head
+  introductory content
+  headers bars with logo and navigation
+  you can use header inside section and article, to put the title and other information
+
+  the header can also be used inside other semantic elements such as <article> or <section>. a section header might conatin the sections heading, author, name, etc. <article>, <section>, <aside>, and <nav> can have ther own <header>
+
+ nav
+	major navigation blocks in the site
+	often inside a header
+
+main
+	the main content of the document(what is unique of this page)
+	only 1 per page, inside the body
+
+	support for older browser
+
+  <main role="main">
+    <!-- main content goes here -->
+  </main>
+
+  footer
+  social media links
+  secondary navigation
+  site smallprint
+  you can use footer inside articles or sections, but they should be related to the parent element
+
+what are trying to describe?
+  html is used to descrtibe the meaing of the page's content
+  in other words: the role of a block content in the contect of the whole document
+  html is not for describing what a page looks like-like colors, size, shadows, etc
+
+default styles
+  your browser applies some default styles to every element
+  for example, <b> and <strong> elements will generally be rendered as bold
+  but you should avoid using html for visual effect
+
+  <p> this is some <em>loerm ipsum</em> text</p>
+
+  <p> this some <i lang="la"> lorem ipsum</i> text</p>
+
+who are we describing the content for?
+  html is for computers to read
+  computers turn the html into things the user sees!
+  html is also vital for things like screen readers, where good markup can make navigation much easier
+
+use HTML to describe the content. Use CSS to style the output
