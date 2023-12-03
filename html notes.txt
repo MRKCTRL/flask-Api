@@ -176,3 +176,99 @@ who are we describing the content for?
   html is also vital for things like screen readers, where good markup can make navigation much easier
 
 use HTML to describe the content. Use CSS to style the output
+
+
+named colors
+  css comes with dozen of re-defined colurs
+  however, we can also define ourown colours
+  some colournames areare aliases for other colours(such as gray and grey)
+
+what is rgb?
+  an additive colour model that uses Red,Green, and Blue
+  for each colour, use a value between 0 and 255
+    whit is rgb(255,255, 255)
+    black is rgb (0, 0, 0)
+    purple is rgb (128, 0, 128)
+
+what is hexadecimal
+  hexadecimal is a base-16 number system, using the numerals 0-9, aswell as a,b,c, d, e and f(meaning 10,11,12,13,14 and15)
+  the hexadecimal ff is equilavlet to the decimal value 255
+
+rgb and hexadecimal
+  css colours can be represented as three pairs of hexadecimal numbers, such as #ff00ff meaning 255,0,255
+  so we cab use a single hexadecimal number instead of three decimal numbers, which is more succint
+
+what is hsl
+  stands for hue, saturation  and lightness
+  it uses a cyclindrical model to represent the colour space
+  the hue is represented by am mgle between 0 and 360
+  that is due to increased saturation
+  lightness is the third dimension, where 100% gives us white and 0% gives us black
+
+  at lightness of 50%
+  and a saturation of 100%
+  we get the most saturated version of a given hue
+  purple (the named colour) in hsl is hsl(300,100%,25%)
+    alternatively you can write hsl(300deg,100%,25%)
+
+working with colour opacity
+  rgb and hsl can make use of an alpha channel, which represents opacity
+  rgba(128, 0, 128, 50%) is 50% transparent purple
+
+some propertis that dont inherit by default, first type layout, the margins, paddings, size(width and heigh) border
+
+what is the box-model
+  a really important concept
+  it determines the overall size and shape of an element on the page
+  made up of: content are, padding, border, and margin
+  the standardand height properties for an element change the size of its content area ]
+  width: 300px;
+  height: 50px;
+  padding: 10px;
+
+the standard box model
+    so if we want the element to have a final width 300px, we need to do
+    final width= width - vertical borders -vertical padding.
+the alternative box model
+  the size of an element is calculated as the content size + padding + border
+  margin is still calculated separately, since its separate elements from each other
+  i recommend you use the alternativebox modelfor all elements
+
+block vs inline elements
+  Everything we've talked about applies only to elemnts being displayed as blocks
+  for inline elements
+  we cant set explicit width and height, these are set by the content
+  qw cabt create space above and below them with paddings, margin,borders(left and right still works)
+
+what is specificity?
+  a mechanism used by browser to determine which property declaration are applied
+  the selectors of a property determine the specificity weight
+  the property with the highet weight, wins and is applied to the element
+
+the weighting system
+  different types of selector contribute differently to overall specificity
+  a selector with higher weight  beats any number of selectors with a lower weight
+  overridding specificity with !important
+  e.g div ul li {
+    background-color: blue !important;
+  }
+
+for any non-important declarations..
+  we look at specificity
+  remember, !important only affects single declarations
+what is bem?
+  a css methodolohy and a naming scheme
+  uses classes almost exclusively(no other selectors)
+  this helps with specificity
+  BEM stands fr block element modifier,lets take a look
+  block meaningful,standalone entities .
+  block classes are generally single words
+  elements are separated with double score
+  part of a block
+  its meaning is tid to the block
+  writteen using the block class and double underscore
+
+modifiers
+   variant of the basic styles for a block or element
+   uses the block element class and a double hypen
+   these are vital for creating reusable styles 

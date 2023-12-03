@@ -1,0 +1,11 @@
+.container {
+  color: orangered;
+}
+p {
+  color: orangered;
+}
+a {
+  color: inherit;
+  /* we can use the inherit to inherit color fromthe same p tag */
+  /*  we dont want to make the text sam color as anchor/link  */
+}

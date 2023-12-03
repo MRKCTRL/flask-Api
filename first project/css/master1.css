@@ -1,0 +1,6 @@
+label ~ input {
+  padding: 5px 10px;
+}
+label + input {
+  padding: 5px 10px;
+}
