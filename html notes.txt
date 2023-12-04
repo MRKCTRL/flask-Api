@@ -271,4 +271,26 @@ what is bem?
 modifiers
    variant of the basic styles for a block or element
    uses the block element class and a double hypen
-   these are vital for creating reusable styles 
+   these are vital for creating reusable styles
+
+1.become a User(or have one in your team)
+  have the client inyour team
+  plan with team
+  show them the finished product
+  planning everey 2-3 weeks gives you enough time to completework,andlowers risk risk of planning waste
+2.populate the  backlog with help from the user
+  understand how the software will help the user
+  shrink and re-think until you have something useful in one sprint
+  the client can add or remove work from the backlog at any time
+  xhanging the planned work is a bit disruptive
+3.make the working software
+  desiggn + code
+4.review and change plan
+  user testing and review
+  every sprint show off your working software
+  client gives you feedback
+  youget a morale boost
+5.improve your process.
+  very important
+  periodically review your processess and and ways of working
+  ensure everyone feels safe saying what they are thinking 
