@@ -293,4 +293,16 @@ modifiers
 5.improve your process.
   very important
   periodically review your processess and and ways of working
-  ensure everyone feels safe saying what they are thinking 
+  ensure everyone feels safe saying what they are thinking
+
+
+comparison: svg and bitmap
+  bitmaps have a defined number of pixels
+  svgs are defined as mathematical function
+  svgs are usually smaller(but not when used for things like photos)
+
+what is an svg?
+
+<svg width="" height="" viewbox="">
+ <path d="" fill=""/>
+</svg>

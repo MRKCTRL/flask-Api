@@ -3,14 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>The Curious Mind</title>
-  </head>
-  <body>
-    <header>
+    <link rel="stylesheet" href="style.css">
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="navbar__brand">
+        <img class="navbar__logo" src="logo.png" alt="The Curious mind logo">The Curious Mind
+      </div>
+<ul class="navbar__navigation">
+  <li class="navbar__navigation_item"><a href="#" class="navbar__link">New</a> </li>
+  <li class="navbar__navigation_item"><a href="#" class="navbar__link">Calender</a> </li>
+</ul>
     </header>
-    <main>
+    <main class="main">
 <section>
 <h2>New Entry</h2>
+<form class="form" action="/entry" method="post">
+  <p class="form__input">
+    <label for="entry" class="form__label">Entry content</label>
+
+    <textarea name="name" rows="8" cols="80" id="entry" class="form__textarea" aria-label="Write Here"></textarea>
+
+  </p>
+
+
+
+   <!-- <input type="text" name="email" value="email-field" id="email-field"> -->
+
+  <button type="submit" name="button" class="form__submit">Add Enrty</button>
+
+</form>
 </section>
 <section>
   <h2>Recent Post</h2>
@@ -23,6 +51,34 @@
   </article>
 </section>
     </main>
-    <footer></footer>
+
+    <!-- footoer -->
+    <footer  class="footer">
+<div class="footer__content">
+  <section class="left">
+    <a class="footer__item" href="#">Made BY jadevelops</a>
+    <a class="footer__item" href="#">Check out my other project</a>
+
+  </section>
+  <section class="right">
+<div class="footer__column">
+  <a class="footer__item" href="#">New</a>
+  <a class="footer__item" href="#">Calender</a>
+
+</div>
+<div class="footer__column">
+  <a class="footer__item" href="#">About</a>
+  <a class="footer__item" href="#">How it was made</a>
+  <a class="footer__item" href="#">Contact</a>
+
+
+</div>
+  </section>
+
+</div>
+
+    </footer>
+
+
   </body>
 </html>
