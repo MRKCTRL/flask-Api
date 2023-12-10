@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>loops and conditon1s</title>
+  </head>
+  <body>
+<h1>loops in junja</h1>
+<h2>for loop & conditionals statments</h2>
+
+{% for user, os in user_os.item() %}
+{% if os == 'windows' %}
+<p>{{user}} is a windows user </p>
+{% elif os == 'macos' %}
+<p>{{ user }} is a macos user</p>
+{% elif os == 'linux' %}
+<p>{{ user }} is a debian user</p>
+{% endif %}
+
+{% endfor %}
+  </body>
+</html>

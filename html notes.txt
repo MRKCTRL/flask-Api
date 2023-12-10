@@ -306,3 +306,65 @@ what is an svg?
 <svg width="" height="" viewbox="">
  <path d="" fill=""/>
 </svg>
+
+
+jinja2
+  variable = {{ }}
+
+
+nosql
+  the name says it all:no sql
+  databases using varying ways of storing data to provide a variety of beneifts
+  bu there also drawbacks
+
+  mongoDB
+
+  doesnt use tables with columns
+  instead it uses collections iwth documents
+  a document can contain whatever you want
+  every document can be different from every other document in a collection
+
+what does a document look like?
+  {
+  _id: objectId('54894')
+  username: '87bgg7d'
+  contact: {
+  phone: '123456789'
+
+  email: '12515611.admin'
+  },
+  access: {
+  level: 5,
+  group: 'dev'
+  }
+  }
+
+beneifts of mongoDB
+  more flexibility since there is no fixed schema
+  this can lead to faster development times
+  data storage(json) is similar to python dict, so it lends well since less code is needed for mapping data
+  mongodb scalability model is straightforward
+
+  drawbacks of Mongofb
+  no native joins. you can join manually with python code, but performance is much worse than native sql joins
+  storing the key name for each field in every document results   in high memory usage
+  there are limits to the size of documents and amount of nesting within documents
+
+what happens when we run our app
+  we are able to 'listen' to incoming requests
+  out flask app deals with them and responds appropriately
+  but who can make requests
+  the answer: anyone who has access to the computer running the app
+
+
+accesing the computers openly
+  most computers are set up to not be accessilble easily from the 'the outside'
+  that is mostly for secruity reasions
+  but also, every internet-connected device has an ip address that other internet-connected devices can use to connect to it
+  most isps do not provide fixed ip addresses
+
+why we deploy our apps?
+  when we deploy, we put our code and run it in a computer that:
+    has a fixed ip address
+    is open to connections
+    has hardware specifically designed to be cheap and efficient when handling web applications 
